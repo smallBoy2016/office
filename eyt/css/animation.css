@@ -1,0 +1,108 @@
+.banner_1 img:nth-child(1){
+	position: absolute;
+	top:0px;left:0;
+	animation:right 2s ease;
+	-webkit-animation:right 2s ease;
+	-moz-animation:right 2s ease;
+	-ms-animation:right 2s ease;
+}
+.banner_1 img:nth-child(2){
+	position: absolute;
+	top:10px;
+	right: 245px;
+	animation:top 2.5s ease;
+	-webkit-animation:top 2.5s ease;
+	-moz-animation:top 2.5s ease;
+	-ms-animation:top 2.5s ease;
+}
+.banner_1 img:nth-child(3){
+	position: absolute;
+	top:50px;
+	right: 445px;
+	animation:bottom 3s ease;
+	-webkit-animation:bottom 3s ease;
+	-moz-animation:bottom 3s ease;
+	-ms-animation:bottom 3s ease;
+}
+@keyframes top{
+	0%{top:1500px;}
+	100%{top:10px;}
+}
+@-webkit-keyframes top{
+	0%{top:1500px;}
+	100%{top:10px;}
+}
+@-moz-keyframes top{
+	0%{top:1500px;}
+	100%{top:10px;}
+}
+
+@keyframes right{
+	0%{left:-1000px;}
+	100%{left:0;}
+}
+@-webkit-keyframes right{
+	0%{left:-1000px;}
+	100%{left:0;}
+}
+@-moz-keyframes right{
+	0%{left:-1000px;}
+	100%{left:0;}
+}
+
+@keyframes bottom{
+	0%{top:-500px;}
+	100%{top:50px;}
+}
+@-webkit-keyframes bottom{
+	0%{top:-500px;}
+	100%{top:50px;}
+}
+@-moz-keyframes bottom{
+	0%{top:-500px;}
+	100%{top:50px;}
+}
+
+@media screen and (max-width: 768px) {
+	.banner_1 img:nth-child(3){
+		top:120px;
+		right: 50px;
+		animation: bottom 2s ease;
+	}
+	
+	@keyframes bottom{
+		0%{top:-500px;}
+		100%{top:120px;}
+	}
+	@-webkit-keyframes bottom{
+		0%{top:-500px;}
+		100%{top:120px;}
+	}
+	@-moz-keyframes bottom{
+		0%{top:-500px;}
+		100%{top:120px;}
+	}
+
+}
+/*banner_2*/
+.banner_2 img:nth-child(1){
+	position: absolute;
+	top:0px;left:0;
+
+
+}
+.banner_2 img:nth-child(2){
+	position: absolute;
+	top:39px;
+	right: -100px;
+
+
+}
+.banner_2 img:nth-child(3){
+	position: absolute;
+	top:50px;
+	right: 700px;
+
+}
+
+
