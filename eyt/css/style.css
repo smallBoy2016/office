@@ -1,0 +1,195 @@
+/*nav*/
+nav{
+	width: 100%;
+	background: #f2f2f2;
+}
+.nav_top{
+	height: 40px;
+	background: #f2f2f2;
+}
+.nav_left{
+	font-size: 10px;
+	color:#5c5c5c;
+	height: 40px;
+	line-height: 40px;
+}
+.nav_right{
+	height: 40px;
+	line-height: 40px;
+	text-align: right;
+}
+.nav_right a{
+	font-size: 10px;
+}
+.nav2{
+
+}
+.nav_title{
+	height: 90px;
+	line-height: 90px;
+	background: #fff;
+}
+.nav_title_l{
+	height: 90px;
+	text-align: center;
+	line-height: 90px;
+}
+
+.nav_title_r>ul>li>a:visited{
+	background: #fff;
+}
+.nav_title_r>ul>li>a:hover{
+	background: #fff;
+	color:#1f4e81;
+	text-decoration: underline;
+}
+.nav_title_r>ul>li>a:active{
+	background: #fff;
+}
+.nav_title_r>ul>li>a{
+	background: #fff;
+	font-size: 16px;
+	color: #4a4a4a;
+	padding:0 25px;
+}
+/*banner*/
+.banner{
+	height: 520px;
+	background: url(../img/banner1_1.png) center;
+}
+
+/*taggle*/
+.taggle_1{
+	margin-top: 40px;
+}
+.taggle_1 a{
+	font-size: 16px;
+	text-align: center;
+}
+.taggle_1_img{
+	margin-top: 40px;
+	height: 416px;
+}
+
+.active a{
+	background:red;
+}
+/*title_ser*/
+.title_ser{
+	text-align: center;
+	line-height: 26px;
+	margin: 70px 0 60px 0; 
+}
+/*service*/
+.service{
+	width: 1200px;
+}
+.service ul>li{
+	float: left;
+	width: 234px;
+	height: 420px;
+	text-align: center;
+}
+.service ul>li>h4{
+	font-size: 16px;
+	margin-top: 30px;
+	color: #1f4e81;
+	margin-bottom: 20px;
+}
+.service ul>li>p{
+	color: #333;
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+/*footer_1*/
+.footer_1{
+	width: 100%;
+	color: #333;
+	border-top: 2px solid #b8b8b8;
+	background: #e6e6e6;
+}
+.footer_1 ul>li{
+	width: 150px;
+	float: left;
+	margin-bottom: 20px;
+	margin-left: 180px;
+}
+.footer_1 ul>li:nth-child(1){
+	margin-left: 0;
+}
+.footer_1 ul>li h5{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+.footer_1 ul>li p{
+	font-size: 12px;
+	line-height: 20px;
+}
+footer{
+	background: #b8b8b8;
+	width: 100%;
+}
+footer h4{
+	margin:20px 0 0px 0;
+	font-size: 16px;
+	color: #333;
+}
+/*mobile*/
+.mobile_1{
+	position: absolute;
+	right: 1rem;
+	top:1rem;
+}
+@media screen and (max-width: 768px) { /*当屏幕尺寸小于768px时，应用下面的CSS样式*/
+	.nav_left{
+		font-size: 0.8rem;
+	}
+	.nav_title_r{
+		text-align: center;
+		line-height: 60px;
+	}
+  .nav_title_r>ul>li>a{
+		background: #fff;
+		font-size: .9rem;
+		color: #4a4a4a;
+		padding:0 .3rem;
+	}
+	/*baner*/
+	.banner{
+		height: 416px;
+	}
+	/*taggle*/
+	.taggle_1 a{
+		font-size: 1rem;
+	}
+	.nav>li>a{
+		padding:1.1rem 1rem;
+	}
+	/*service*/
+	.service_xs{
+		text-align: center;
+	}
+	.service_xs ul>li{
+		margin-bottom: 10px;
+	}
+	.service_xs ul>li>h4{
+		margin: .5rem 0;
+		font-size: 1.6rem;
+		line-height: 1.6rem;
+	}
+	.service_xs ul>li>p{
+		font-size: 1.2rem;
+		line-height: 1.2rem;
+	}
+}
+
+
+
+
+
+
+
+
+
+
