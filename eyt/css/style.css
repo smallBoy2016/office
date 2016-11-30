@@ -52,9 +52,30 @@ nav{
 }
 .nav_title_r>ul>li>a{
 	background: #fff;
-	font-size: 16px;
+	font-size: 18px;
 	color: #4a4a4a;
 	padding:0 25px;
+}
+.tel{
+	color:#1f4e81;
+	width: 150px;
+	height: 50px;
+	position: absolute;top:60px;
+	right: 10px;
+	z-index: 2;
+	font-size: 14px;
+	text-align: center;
+}
+.tel>img{
+	margin-top: 10px;float: left;
+}
+.tel>p{
+	float:left;margin-top: 20px;
+	margin-left: 20px;
+}
+.ind{
+	color:#1f4e81;
+	text-decoration: underline;
 }
 /*banner*/
 .banner{
