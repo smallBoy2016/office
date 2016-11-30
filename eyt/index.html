@@ -126,31 +126,31 @@
 </section>
 
 <!-- pc taggle -->
-<section class="hidden-xs taggle_1">
+<section class="hidden-xs taggle_1 taggle_1_IMG">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-12 column">
 				<div class="tabbable" id="tabs-533546">
 					<ul class="nav nav-tabs">
 						<li class="active">
-							 <a href="#panel-239857" data-toggle="tab">科技前沿（news）</a>
+							 <a href="#panel-239857" data-toggle="tab" class="taggle_t">科技前沿（news）</a>
 						</li>
 						<li>
-							 <a href="#panel-266819" data-toggle="tab">案例（case）</a>
+							 <a href="#panel-266819" data-toggle="tab" class="taggle_t">案例（case）</a>
 						</li>
 						<li>
-							 <a href="#panel-266891" data-toggle="tab">网站建站流程（case）</a>
+							 <a href="#panel-266891" data-toggle="tab" class="taggle_t">网站建站流程（case）</a>
 						</li>
 					</ul>
 					<div class="tab-content">
-						<div class="active taggle_1_img" id="panel-239857">
+						<div class="active taggle_1_img taggle_1_div" id="panel-239857">
 							<ul>
 								<li>
-									<img src="img/title1_pic1.png" alt="">
-									<img src="img/title1_pic2.png" style="margin-top: 20px;">
+									<p class="taggle_1_p"><img src="img/title1_pic1.png" alt=""></p>
+									<p class="taggle_1_p" style="margin-top: 20px;"><img src="img/title1_pic2.png" ></p>
 								</li>
 								<li>
-									<img src="img/title1_pic3.png" alt="">
+									<p class="taggle_1_p"><img src="img/title1_pic3.png" alt=""></p>
 								</li>
 								<li>
 									<img src="img/title1_pic4.png" alt="">
@@ -159,28 +159,54 @@
 							</ul>
 						</div>
 						<!-- 2 -->
-						<div class="taggle_1_img" id="panel-266819">
+						<div class="taggle_1_img taggle_1_div" id="panel-266819">
 							<ul>
 								<li>
 									<img src="img/title2_pic1.png" width="50%">
-									<img src="img/title2_pic3.png" width="40%" style="margin-left: 20px;">
-									<img src="img/title2_pic2.png" style="margin-top: 20px;">
-								</li><li>
-									<img src="img/title2_pic5.png" alt="">
-									<img src="img/title2_pic6.png" >
-									<img src="img/title2_pic7.png" >
+									<img src="img/title2_pic3.png" width="46.3%" style="margin-left: 20px;">
+									<div style="width: 50px;height: 50px;background: red;float: left;margin-left: 20px;margin-top: 20px;"></div>
+									<img src="img/title2_pic2.png" width="63%" style="margin-top: 20px;">
+									<img src="img/title2_pic4.png" style="margin-left:20px;margin-top: -45px;" width="33.3%">
+								</li>
+								<li>
+									<img src="img/title2_pic5.png" width="45%">
+									<img src="img/title2_pic7.png" style="margin-left: 20px;" width="51%">
+									<img src="img/title2_pic6.png" width="34%">
+									<div style="width: 100px;height: 100px;background: red;float: left;margin-left: 20px;margin-top: 20px;"></div>
+									<img src="img/title2_pic8.png" width="40%" style="margin-top: 20px;margin-left: 20px;">
 								</li>
 
 
 							</ul>
 						</div>
-						<div class="taggle_1_img" id="panel-266891">
+						<!-- 3 -->
+						<div class="taggle_1_img taggle_1_div" id="panel-266891">
 							<ul>
 								<li>
-									<img src="img/title1_pic2.png" alt="">
+									<img src="img/title3_pic1.png" width="173">
+									<img src="img/title3_con1.png" alt="">
 								</li>
-								<li></li>
-								<li></li>
+								<li>
+									<img src="img/title3_pic2.png" width="173">
+									<img src="img/title3_con2.png" alt="">
+								</li>
+								<li>
+									<img src="img/title3_pic3.png" width="173">
+									<img src="img/title3_con3.png" alt="">
+								</li>
+								<li>
+									<img src="img/title3_pic4.png" width="173">
+									<img src="img/title3_con4.png" alt="">
+								</li>
+								<li>
+									<img src="img/title3_pic5.png" width="173">
+									<img src="img/title3_con5.png" alt="">
+								</li>
+								<li>
+									<img src="img/title3_pic6.png" width="173">
+									<img src="img/title3_con6.png" alt="">
+								</li>
+
 							</ul>
 						</div>
 					</div>
@@ -402,8 +428,6 @@
 			$('body').animate({scrollTop: 1500}, 800);
 		});
 
-
-
 		/*wechat*/
 		$('#wechat_btn').click(function(){
 			$('#wechat_box').toggle();
@@ -455,6 +479,178 @@
 				},50);
 			}
 		}
+
+
+		/*taggle*/
+		var taggleTitle = document.getElementsByClassName('taggle_t');
+		var taggleBox   = document.getElementsByClassName('taggle_1_div');
+		var taggleImg   = 
+		document.getElementsByClassName('taggle_1_IMG')[0].getElementsByTagName('img');
+
+		var eytDom = document.getElementsByClassName('taggle_1_p');
+		changeTag(taggleTitle,taggleBox);
+
+		function changeTag(arrHead,arrContent){
+			for(var i=0;i<arrHead.length;i++){
+				arrHead[i].index = i;
+				arrHead[i].onclick = function(){
+					for(var i=0;i<arrContent.length;i++){
+						arrContent[i].style.display = 'none';
+					}
+					arrContent[this.index].style.display = 'block';
+				};
+			}
+		}
+		/*taggleImg  hover*/
+		/*
+		鼠标滑上去的时候，一个透明的盒子从下至上出现，黑子中有文字，文字居中。
+		224,
+		*/
+
+		var data = {
+			topArr : [84,222,0],
+			textArr : [
+						"中国科技网：电商物流加速进入“拼数据”竞争时代",
+						"专题：第三届世界互联网大会",
+						"《环球科学》：内存又大又便宜，谁还需要用硬盘",
+						]
+		};
+
+		imgHover();
+
+		function imgHover(){
+			var off = 1;
+			var i = 0;
+
+
+			//创建DIV
+			if( off <= 1){
+				var Div = document.createElement('div');		
+				off++;
+				imgDom = taggleBox[0].parentNode.appendChild(Div); 							
+			}
+
+			eytDom[0].addEventListener('click',function(){
+				bg(0);
+			});
+			eytDom[1].addEventListener('click',function(){
+				bg(1);
+			});
+			eytDom[2].addEventListener('click',function(){
+				bg(2);
+			});
+
+
+
+			function bg(index){
+				i++;
+				eytDom[index].style.position = 'relative';
+
+				var iWidth = taggleImg[index].offsetWidth;
+				var iHeight = taggleImg[index].offsetHeight;
+									
+
+
+				if(i==1){
+
+					imgDom.className = 'eyt eyt_a';
+					imgDom.style.width = iWidth+'px';
+					imgDom.style.height = iHeight+'px';
+					imgDom.style.lineHeight = iHeight*5/3+'px'; 
+					imgDom.style.top = data.topArr[index] + 'px';	
+					imgDom.innerText = data.textArr[index]; 	
+					i=-1;
+
+				}else if(i==0){
+					imgDom.className = 'eyt eyt_b';
+					imgDom.style.width = iWidth+'px';
+					imgDom.style.height = 0;
+					imgDom.innerText = ''; 	
+
+					i = 0;
+
+				}
+			}
+
+/*			eytDom[1].onclick = function(){
+
+				i++;
+				eytDom[1].style.position = 'relative';
+
+				var iWidth = taggleImg[1].offsetWidth;
+				var iHeight = taggleImg[1].offsetHeight;
+									
+				if( off <= 1){
+					var Div = document.createElement('div');		
+					off++;
+
+					imgDom = eytDom[1].appendChild(Div); 			
+
+					
+				}
+
+				if(i==1){
+
+					imgDom.className = 'eyt eyt_a';
+					imgDom.style.width = iWidth+'px';
+					imgDom.style.height = iHeight+'px';
+					imgDom.style.lineHeight = iHeight*5/3+'px'; 	
+					imgDom.innerText = '假如生活欺骗了你'; 	
+					i=-1;
+						console.log('k'+i);
+				}else if(i==0){
+					imgDom.className = 'eyt eyt_b';
+					imgDom.style.width = iWidth+'px';
+					imgDom.style.height = 0;
+					imgDom.innerText = ''; 	
+
+					i = 0;
+									console.log('k'+i);
+				}
+
+			};*/
+/*			eytDom[2].onclick = function(){
+				i++;
+				eytDom[2].style.position = 'relative';
+
+				var iWidth = taggleImg[2].offsetWidth;
+				var iHeight = taggleImg[2].offsetHeight;
+									
+				if( off <= 1){
+					var Div = document.createElement('div');		
+					off++;
+
+					imgDom = eytDom[2].appendChild(Div); 			
+
+					
+				}
+
+				if(i==1){
+
+					imgDom.className = 'eyt eyt_a';
+					imgDom.style.width = iWidth+'px';
+					imgDom.style.height = iHeight+'px';
+					imgDom.style.lineHeight = iHeight*5/3+'px'; 	
+					imgDom.innerText = '假如生活欺骗了你'; 	
+					i=-1;
+						console.log('k'+i);
+				}else if(i==0){
+					imgDom.className = 'eyt eyt_b';
+					imgDom.style.width = iWidth+'px';
+					imgDom.style.height = 0;
+					imgDom.innerText = ''; 	
+
+					i = 0;
+									console.log('k'+i);
+				}
+
+			};
+*/
+
+
+		}
+
+
 	})
 
 
