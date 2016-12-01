@@ -94,10 +94,88 @@
 					<p>[ 微信客户端展示 ]</p>
 				</div>
 				<div class="s_case_box">
-					<div>11</div>
-					<div>22</div>
+					<div class="s_case_box_1 div1">
+						<ul>
+							<li class="s_1">
+								<img src="img/success/case_net_pic2.png">
+								<p>江苏科信工程检测</p>
+							</li>
+							<li class="s_1">
+								<img src="img/success/case_net_pic3.png">
+								<p>皆可博（苏州）车辆控制系统有限公司</p>
+							</li>
+							<li class="s_1">
+								<img src="img/success/case_net_pic4.png">
+								<p>蓝珀医疗网站</p>
+							</li>
+							<li class="s_1">
+								<img src="img/success/case_net_pic5.png">
+								<p>朗博盛教育</p>
+							</li>
+							<li class="s_1">
+								<img src="img/success/case_net_pic6.png">
+								<p>苏州霞云财务服务有限公司</p>
+							</li>
+							<li class="s_1">
+								<img src="img/success/case_net_pic7.png">
+								<p>苏州市医疗器械行业协会</p>
+							</li>
+							<li class="s_2">
+								<img src="img/success/case_net_pic8.png">
+								<p>苏州旭创科技有限公司</p>
+							</li>
+							<li class="s_2">
+								<img src="img/success/case_net_pic7.png">
+								<p>苏州尚世节能建筑工程有限公司</p>
+							</li>
+							<li class="s_2">
+								<img src="img/success/case_net_pic7.png">
+								<p>苏州银鹰装饰有限公司</p>
+							</li>
+						</ul>
+						<div class="col-md-12">
+							<div class="s_case_f">
+								<div>
+									<a href="javascript:;" class="play_prev">[ 上一页 ]</a>
+									<a href="javascript:;" class="play_prev">[ 1 ]</a>
+									<a href="javascript:;" class="play_next">[ 2 ]</a>
+									<a href="javascript:;" class="play_next">[ 下一页 ]</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="s_case_box_1 div1">
+						<ul>
+							<li>
+								<img src="img/success/case_wechat_pic1.png" alt="">
+								<p>碧波中学智慧校园</p>
+							</li>
+							<li>
+								<img src="img/success/case_wechat_pic2.png" alt="">
+								<p>碧波中学智慧校园</p>
+							</li>
+							<li>
+								<img src="img/success/case_wechat_pic3.png" alt="">
+								<p>碧波中学智慧校园</p>
+							</li>
+							<li>
+								<img src="img/success/case_wechat_pic4.png" alt="">
+								<p>碧波中学智慧校园</p>
+							</li>
+						</ul>
+						<div class="col-md-12">
+							<div class="s_case_f">
+								<div>
+									<a href="javascript:;" class="play_prev">[ 上一页 ]</a>
+									<a href="javascript:;" class="play_prev">[ 1 ]</a>
+									<a href="javascript:;" class="play_next">[ 下一页 ]</a>
+								</div>
+							</div>
+					</div>
 				</div>
+
 			</div>
+
 		</div>
 	</div>
 </section>
@@ -199,39 +277,7 @@
 
 
 <script src="js/script.js"></script>
-<script>
-	
-	$(function(){
-
-		/*banner*/
-
-		var caseTitle = 
-			document.getElementsByClassName('s_case_title')[0].getElementsByTagName('p');
-		var caseBox = 
-			document.getElementsByClassName('s_case_box')[0].getElementsByTagName('div');
-
-
-		changeTag2(caseTitle,caseBox);
-		function changeTag2(arrHead,arrContent){
-			for(var i=0;i<arrHead.length;i++){
-				arrHead[i].index = i;
-				arrHead[i].onclick = function(){
-					for(var i=0;i<arrContent.length;i++){
-						arrHead[i].style.color = '#4a4a4a';
-						arrContent[i].style.display = 'none';
-					}
-					arrContent[this.index].style.display = 'block';
-					arrHead[this.index].style.color = '#1f4e81';
-				};
-			}
-		}
-		
-
-	})
-
-
-
-</script>
+<script src="js/success.js"></script>
 
 </body>
 </html>
