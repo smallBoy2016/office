@@ -28,6 +28,9 @@
 .service_div>ul>li>div:nth-child(1){
 	margin-left: 0;
 }
+.service_div>ul>li:nth-child(n+2){
+	display: none;
+}
 .service_div>ul>li>div>h4{
 	font-size: 16px;
 	color: #4a4a4a;
@@ -41,3 +44,56 @@
 	line-height: 22px;
 	padding-left: 10px;
 }
+
+.ser_img>div>img{
+	width: 49%;
+	float: left;
+	margin-top: 10px;
+}
+.ser_img>img:nth-child(even){
+	margin-left: 10px;
+}
+
+
+/*ser_form*/
+.ser_form{
+	height: 600px;
+}
+.ser_form_1{
+	width: 160px;
+	color: #fff;
+	font-size: 18px;
+	height: 40px;
+	line-height: 40px;
+	background: #1f4e81;
+	text-align: center;
+	border-radius: 6px;
+}
+.ser_form_1_1{
+	width: 82%;
+	border-top:1px solid #1f4e81;
+	margin-top:-20px;
+	margin-left: 220px;
+}
+.ser_form_2 p{
+	margin-top: 20px;
+}
+.ser_form_2 p input[type="submit"]{
+	background: #fff;
+	width: 80px;
+	height: 30px;border-radius: 6px;
+	outline: none;border: none;
+	color:#1f4e81;
+	box-shadow: 1px 1px 1px #999;
+}
+.ser_form_2 div[class="value"]{
+	margin-top: 30px;
+}
+.ser_form_2 p input[type="submit"]:hover{
+	background: #1f4e81;
+	color: #fff;
+}
+.value>p{
+	color:green;
+}
+
