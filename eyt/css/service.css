@@ -12,9 +12,13 @@
 	margin-left: 36px;
 	font-size: 18px;
 	cursor: pointer;
+	padding: 0 6px;
+	border-radius: 6px;
 }
 .service_title>ul>li:nth-child(1){
 	margin-left: 0;
+	background: #1f4e81;
+	color: #fff;
 }
 .service_div>ul>li>{
 	height: 300px;

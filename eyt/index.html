@@ -50,7 +50,7 @@
 					</div>
 					<div class="col-xs-12 col-md-9 column nav_title_r">
 						<ul class="nav nav-pills">
-						  <li><a href="index.html" style="color:#1f4e81;text-decoration: underline;">首页</a></li>
+						  <li><a href="index.html" style="color:#1f4e81;">首页</a></li>
 						  <li><a href="service.html">服务介绍</a></li>
 						  <li><a href="success.html">成功案例</a></li>
 						  <li><a href="recruit.html">招贤纳士</a></li>
@@ -147,15 +147,30 @@
 						<div class="active taggle_1_img taggle_1_div" id="panel-239857">
 							<ul>
 								<li>
-									<p class="taggle_1_p"><img src="img/title1_pic1.png" alt=""></p>
-									<p class="taggle_1_p" style="margin-top: 20px;"><img src="img/title1_pic2.png" ></p>
+									<div class="taggle_1_p">
+										<div>中国科技网：电商物流加速进入“拼数据”竞争时代</div>
+										<img src="img/title1_pic1.png" width="366">
+									</div>
+									<div class="taggle_1_p" style="margin-top: 30px;">
+										<div>专题：第三届世界互联网大会</div>
+										<img src="img/title1_pic2.png" width="366">
+									</div>
 								</li>
 								<li>
-									<p class="taggle_1_p"><img src="img/title1_pic3.png" alt=""></p>
+									<div class="taggle_1_p">
+										<div>《环球科学》（科学美国人中文版）：内存又大又便宜，谁还需要用硬盘</div>
+										<img src="img/title1_pic3.png" width="366">
+									</div>
 								</li>
 								<li>
-									<img src="img/title1_pic4.png" alt="">
-									<img src="img/title1_pic5.png" style="margin-top: 20px;">
+									<div class="taggle_1_p">
+										<div>福布斯：Magic Leap能把虚拟和现实完全混在一起吗？</div>
+										<img src="img/title1_pic4.png" width="366">
+									</div>
+									<div class="taggle_1_p">
+										<div>Java Magazine、更稳建站：最新Java动态</div>
+										<img src="img/title1_pic5.png" style="margin-top: 30px;" width="366" height="200">
+									</div>
 								</li>
 							</ul>
 						</div>
@@ -165,7 +180,7 @@
 								<li>
 									<img src="img/title2_pic1.png" width="50%">
 									<img src="img/title2_pic3.png" width="46.3%" style="margin-left: 20px;">
-									<div style="width: 50px;height: 50px;background: red;float: left;margin-left: 20px;margin-top: 20px;"></div>
+
 									<img src="img/title2_pic2.png" width="63%" style="margin-top: 20px;">
 									<img src="img/title2_pic4.png" style="margin-left:20px;margin-top: -45px;" width="33.3%">
 								</li>
@@ -507,7 +522,7 @@
 						]
 		};
 
-		imgHover();
+		// imgHover();
 
 		function imgHover(){
 			var off = 1;
@@ -563,80 +578,7 @@
 				}
 			}
 
-/*			eytDom[1].onclick = function(){
 
-				i++;
-				eytDom[1].style.position = 'relative';
-
-				var iWidth = taggleImg[1].offsetWidth;
-				var iHeight = taggleImg[1].offsetHeight;
-									
-				if( off <= 1){
-					var Div = document.createElement('div');		
-					off++;
-
-					imgDom = eytDom[1].appendChild(Div); 			
-
-					
-				}
-
-				if(i==1){
-
-					imgDom.className = 'eyt eyt_a';
-					imgDom.style.width = iWidth+'px';
-					imgDom.style.height = iHeight+'px';
-					imgDom.style.lineHeight = iHeight*5/3+'px'; 	
-					imgDom.innerText = '假如生活欺骗了你'; 	
-					i=-1;
-						console.log('k'+i);
-				}else if(i==0){
-					imgDom.className = 'eyt eyt_b';
-					imgDom.style.width = iWidth+'px';
-					imgDom.style.height = 0;
-					imgDom.innerText = ''; 	
-
-					i = 0;
-									console.log('k'+i);
-				}
-
-			};*/
-/*			eytDom[2].onclick = function(){
-				i++;
-				eytDom[2].style.position = 'relative';
-
-				var iWidth = taggleImg[2].offsetWidth;
-				var iHeight = taggleImg[2].offsetHeight;
-									
-				if( off <= 1){
-					var Div = document.createElement('div');		
-					off++;
-
-					imgDom = eytDom[2].appendChild(Div); 			
-
-					
-				}
-
-				if(i==1){
-
-					imgDom.className = 'eyt eyt_a';
-					imgDom.style.width = iWidth+'px';
-					imgDom.style.height = iHeight+'px';
-					imgDom.style.lineHeight = iHeight*5/3+'px'; 	
-					imgDom.innerText = '假如生活欺骗了你'; 	
-					i=-1;
-						console.log('k'+i);
-				}else if(i==0){
-					imgDom.className = 'eyt eyt_b';
-					imgDom.style.width = iWidth+'px';
-					imgDom.style.height = 0;
-					imgDom.innerText = ''; 	
-
-					i = 0;
-									console.log('k'+i);
-				}
-
-			};
-*/
 
 
 		}
