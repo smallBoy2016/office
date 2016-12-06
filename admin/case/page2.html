@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{margin:0;padding:0;}
+		ul,li{list-style: none;}
+		.left{
+			width: 220px;
+			height: 700px;
+			color: #333;
+			border-right: 1px solid #666;
+			background: #fff;
+			float: left;
+		}
+		.left>ul>li{
+			height: 30px;
+			width: 96%;
+			margin-left: 2%;
+			margin-bottom: 4px;
+			text-align: center;
+			line-height: 30px;
+			background: #e6e6e6;
+			border-radius: 4px;
+		}
+		.right{
+			float: left;
+		}
+		.right label{
+			display: block;
+			margin-top:10px;
+		}
+		.right input{
+			height: 28px;
+			width: 200px;
+			margin-left: 12px;
+		}
+		.set{
+			width: 120px;
+	    height: 35px;
+	    border: 1px solid #ccc;
+			border-radius: 6px;
+		}
+	</style>
+</head>
+<body>
+
+
+<div class="div">
+	<div class="left">
+		<ul>
+			<li><a href="content.html">新闻管理</li>
+			<li><a href="page2.html">增加新闻</a></li>
+		</ul>
+	</div>
+	<div class="right">
+		<form action="">
+			<label for="">
+				序号<input type="text">发布时间<input type="date">
+			</label><br>
+			<label for="">
+				标题<input type="text" style="width: 475px;">
+			</label><br>
+			<label for="">
+				内容：<br>
+				<textarea name="" id="" cols="100" rows="20"></textarea>
+			</label><br>
+			<label for="">
+				上传图片：<input type="file">
+			</label><br>
+			<label for="">
+				<input class="set" type="reset" value="重置" style="width: 80px;">
+				<input type="submit" value="发布" class="set" style="width: 80px;">
+			</label>
+		</form>
+	</div>
+</div>	
+</body>
+</html>

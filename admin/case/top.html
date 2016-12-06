@@ -52,6 +52,16 @@
 			margin:10px 0 0 20px;
 			color:#555;
 		}
+		.date>div{
+			width: 300px;
+			height: 40px;
+			line-height: 36px;
+			margin:0 0 0 1000px;
+		}
+		.date>div>a{
+			color: #555;
+			text-decoration: none;
+		}
 	</style>
 </head>
 <body>
@@ -74,15 +84,43 @@
 	<img src="img/clock.png" width="28" style="float: left;margin-top: 6px;margin-left: 4px;">
 	<p class="d_p"></p>
 	<div>
-		<a href="">网站首页</a>
-		<a href="">安全退出</a>
+		<a href="../../eyt/index.html" target="_blank"><img src="img/home_icon.png">网站首页</a>
+		<a href="../login.html" target="_blank"><img src="img/login_icon.png">安全退出</a>
 	</div>
 </div>
 
 
+
+
+<div class="pwd"></div>
+
 <script>
 	
+/*nav*/
+var liDom = 
+	document.getElementsByClassName('title')[0].getElementsByTagName('li');
 
+change(liDom);
+function change(liDom){
+	for(var i=0;i<liDom.length;i++){
+
+		liDom[i].index = i;
+		liDom[i].onclick = function(){
+			for(var j=0;j<liDom.length;j++){
+				liDom[j].style.background = '#fff';
+				liDom[j].style.color = '#555';
+			}
+			liDom[this.index].style.background = 'url(img/nav_bg2.png)';
+			liDom[this.index].style.backgroundSize = '100% 100%';
+			liDom[this.index].style.color = '#fff';
+			
+		}
+	}
+}
+
+
+
+/*本地时间*/
 var pDom = document.getElementsByClassName('d_p')[0];
 var date = new Date();
 

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{margin:0;padding:0;}
+		ul,li{list-style: none;}
+		.left{
+			width: 220px;
+			height: 700px;
+			color: #333;
+			border-right: 1px solid #666;
+			background: #fff;
+			float: left;
+		}
+		.left>ul>li{
+			height: 30px;
+			width: 96%;
+			margin-left: 2%;
+			margin-bottom: 4px;
+			text-align: center;
+			line-height: 30px;
+			background: #e6e6e6;
+			border-radius: 4px;
+		}
+		.right{
+			float: left;
+		}
+		.right h3{
+			margin-left: 8px;
+		}
+		.right_1{
+			height: 100px;
+			width: 960px;
+		}
+		.right_1 select{
+			height: 30px;
+		}
+		.right_1 input{
+			height: 30px;
+		}
+		.btn{
+			width: 120px;
+			height: 40px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+		}
+		.table{
+			margin-top:50px;
+
+		}
+		table{
+			margin-left: 30px;
+			border: 1px solid #555;
+		}
+		thead tr{
+
+			border-collapse: collapse;
+		}
+		.table th{
+			padding: 0px 10px;
+			background: #ccc;
+			height: 38px;
+			width: 100px;
+			border-left:1px solid #555; 			
+		}
+		.table th:nth-child(1){
+			border: none;
+		}
+		.table th:nth-child(2){
+			width: 400px;
+		}
+		.table td{
+			height: 38px;
+			text-align: center;
+			font-size: 12px;
+			border: 1px solid #555;
+		}
+		.table tr:nth-child(n+1) td{
+			border-bottom:none; 
+			border-right: none;
+		}
+		.table tr td:nth-child(1){
+			border-left: none;
+		}
+		.page{
+			height: 100px;
+			line-height: 100px;
+		}
+		.page p{
+			float: left;
+		}
+		.page p:nth-child(1){
+			margin-right: 600px;
+		}
+	</style>
+</head>
+<body>
+	
+
+<div class="div">
+	<div class="left">
+		<ul>
+			<li><a href="content.html">新闻管理</li>
+			<li><a href="page2.html">增加新闻</a></li>
+		</ul>
+	</div>
+	<div class="right">
+		<h3>新闻管理</h3>
+		<div class="right_1">
+			<form action="">
+				<div style="margin-left: 100px;">
+					<select>
+						<option selected="selected">--请选择新闻类型--</option>
+						<option>科技</option>
+						<option>商业</option>
+						<option>热点</option>
+					</select>
+					关键词：<input type="text" maxlength="10" placeholder="请输入关键词...">
+					日期：<input type="date">至<input type="date">
+					<input type="submit" value="查询" class="btn" style="height: 36px;">
+				</div>
+
+			</form>
+			<div class="table">
+				<table border="0" cellpadding="0" cellspacing="0">
+					<thead>
+						<tr><th>序号</th><th>新闻标题</th><th>发布时间</th><th>修改</th><th>删除</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>2016120501</td><td>内蒙古煤矿爆炸致死32人，存在严重的违法生产行为</td><td>20161205</td><td><a href="page2.html">修改</a></td><td><a href="">删除</a></td></tr>
+						<tr><td>2016120501</td><td>内蒙古煤矿爆炸致死32人，存在严重的违法生产行为</td><td>20161205</td><td><a href="page2.html">修改</a></td><td><a href="">删除</a></td></tr>
+						<tr><td>2016120501</td><td>内蒙古煤矿爆炸致死32人，存在严重的违法生产行为</td><td>20161205</td><td><a href="page2.html">修改</a></td><td><a href="">删除</a></td></tr>
+						<tr><td>2016120501</td><td>内蒙古煤矿爆炸致死32人，存在严重的违法生产行为</td><td>20161205</td><td><a href="page2.html">修改</a></td><td><a href="">删除</a></td></tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr><tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr><tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>	
+				</table>
+				
+			</div>
+
+			<div class="page">
+				<p>共17条信息 &nbsp;&nbsp;&nbsp;当前显示：<span>1/3</span></p>
+				<p>
+					<a href="">prev</a>
+					<a href="">next</a>
+				</p>	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script>
+	
+</script>
+
+</body>
+</html>
