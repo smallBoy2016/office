@@ -24,8 +24,9 @@
 					苏州恩易特网络科技有限公司&nbsp;&nbsp;互联网运营一站式服务平台
 					</div>
 					<div class="col-xs-0 col-sm-6 col-md-8 column nav_right hidden-xs">
+
 						<a href="javascript:;">官方微信</a>
-						<a href="recruit.html">诚聘精英</a>
+						<a href="javascript:;" id="login">登录</a>
 						<a href="javascript:;">联系我们</a>
 					</div>
 					<div class="tel"><img src="img/phone.png" height="30" /><p style="">0512-62906268</p></div>
@@ -381,7 +382,7 @@
 		<div class="row">
 			<div class="col-md-4">
 				<h4>在线留言：</h4>
-				<form role="form">
+				<form role="form" id="form1">
 					<div>
 						 <label></label><input type="text" class="form-control" placeholder="姓名（ NAME ）" />
 					</div>
@@ -403,7 +404,7 @@
 							你也可以发送需求至邮箱: <span style="color: #1f4e81">administrator@sz-net.net</span>
 						</p>
 					</div>
-					<button type="submit" class="btn btn-default form_btn">提交</button>
+					<button type="submit" id="btn_1" class="btn btn-default form_btn">提交</button>
 				</form>
 			</div>
 			<div class="col-md-3 col-md-offset-1 footer_2">
@@ -433,14 +434,44 @@
 </div>
 
 
+<div class="page_1">
+	<div class="login">
+		<p>	请输入您的用户名和密码</p>
+		<p>用户名：<input type="text"></p>
+		<p>密码：<input type="password"></p>
+		<p>你输入的密码有误</p>
+		<p>
+			<a href="">登录</a>
+			<a href="">重置</a>
+		</p>
+	</div>
+</div>
+
+
 <script src="js/script.js"></script>
+<script src="js/submit.js"></script>
 <script>
 	
 	$(function(){
 
-		/*banner*/
+		/*login*/
 
-		
+		$('#login').click(function(){
+			var l = ($(window).width() - $('.login').outerWidth())/2; 
+			var t = ($(window).height() - $('.login').outerHeight())/2 + $(document).scrollTop(); 
+			$('.page_1').css({display:'block'});
+			$('.login').css({top:t,left:l});
+		});
+		$('.page_1').click(function(){
+			$(this).css({display:'none'});
+
+		});
+		$('.login').click(function(){
+			return false;
+		});
+
+
+		/*banner*/
 
 		bgTag();
 		function bgTag(){

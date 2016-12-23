@@ -19,4 +19,76 @@
 }
 .recruit_div div p{
 	line-height: 20px;
+	margin-bottom: 30px;
 }
+
+.eyt_1_8{
+	margin-bottom: 50px;
+}
+.eyt_1_8 h3{
+	font-size: 18px;
+	margin:10px 0 40px 0;
+}
+
+.eyt_1_9 h4{
+	font-size: 14px;
+	font-weight: 600;
+	margin-top: 20px;
+}
+.eyt_1_9{
+	height: 110px;
+	margin-top: -10px;
+}
+.eyt_1_9 img{
+	float: left;
+	margin-right: 170px;
+}
+.eyt_1_9>div{
+	float: left;
+	height: 110px;
+	line-height: 40px;
+	width: 800px;
+}
+
+
+/**/
+.eyt_1_8 ul li{
+	float: left;
+	width: 156px;
+	height: 94px;
+	margin-left: 40px;
+	text-align: center;
+}
+.eyt_1_8 ul li:nth-child(1){
+	margin-left: 0;
+	background: #8c79b1;
+}	
+.eyt_1_8 ul li:nth-child(2){
+	background: #2a96c7;
+}
+.eyt_1_8 ul li:nth-child(3){
+	background: #749e32;
+}
+.eyt_1_8 ul li:nth-child(4){
+	background: #e88726;
+}
+.eyt_1_8 ul li:nth-child(5){
+	background: #ed4e4e;
+}
+.eyt_1_8 ul li:nth-child(6){
+	background: #5eac8c;
+}
+.eyt_img{
+	margin-top:10px;
+}
+.eyt_1_8 ul li p{
+	color:#fff;
+	font-size: 14px;
+	text-align: center;
+	margin-top: 6px;
+}
+
+
+
+
+

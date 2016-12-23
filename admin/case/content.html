@@ -6,11 +6,15 @@
 	<style>
 		*{margin:0;padding:0;}
 		ul,li{list-style: none;}
+		a{
+			text-decoration: none;
+			color: #555;
+		}
 		.left{
 			width: 220px;
 			height: 700px;
 			color: #333;
-			border-right: 1px solid #666;
+			border-right: 1px solid #999;
 			background: #fff;
 			float: left;
 		}
@@ -21,8 +25,14 @@
 			margin-bottom: 4px;
 			text-align: center;
 			line-height: 30px;
-			background: #e6e6e6;
+			background: linear-gradient(#ccc, #fff);
 			border-radius: 4px;
+			border: 1px solid #ccc;
+		}
+		.left>ul>li:nth-child(1){
+			background: #fff;
+			border:none;
+			border-bottom: 1px solid #ccc;
 		}
 		.right{
 			float: left;
@@ -60,7 +70,7 @@
 		}
 		.table th{
 			padding: 0px 10px;
-			background: #ccc;
+			background: linear-gradient(#fff,#ccc, #fff);
 			height: 38px;
 			width: 100px;
 			border-left:1px solid #555; 			
@@ -102,8 +112,8 @@
 <div class="div">
 	<div class="left">
 		<ul>
-			<li><a href="content.html">新闻管理</li>
-			<li><a href="page2.html">增加新闻</a></li>
+			<li><img src="img/more_icon.png">&nbsp;<a href="content.html">新闻管理</li>
+			<li><img src="img/more_icon.png">&nbsp;<a href="page2.html">增加新闻</a></li>
 		</ul>
 	</div>
 	<div class="right">
