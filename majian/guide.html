@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+  <title>办事向导</title>
+  <script src="js/device.js"></script>
+  <link rel="stylesheet" href="css/iconfont.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet/less" href="style.less"/>
+  <link rel="stylesheet" href="css/guide.css">
+  <script src="less.js"></script>
+
+</head>
+
+<body>
+
+<div class="warp">
+	<header>
+		<h3>办事向导</h3>
+	</header>
+
+
+	<section class="guide">
+		<ul>
+			<li>
+				<div><i class="iconfont icon-iconset0118"></i></div>
+				<p>计划生育</p>
+			</li>
+			<li>
+				<div><i class="iconfont icon-aixin"></i></div>
+				<p>民政服务</p>
+			</li>
+			<li>
+				<div><i class="iconfont icon-renwu2"></i></div>
+				<p>劳动保障</p>
+			</li>
+		</ul>
+	</section>
+
+</div>
+
+<script>
+	
+var arrUrl = ['guide1.html','guide2.html','guide3.html']
+
+var liDom = document.getElementsByClassName('guide')[0].getElementsByTagName('li');
+var len = liDom.length;
+
+for (var i=0;i<len;i++){
+	liDom[i].index = i;
+	liDom[i].onclick = function(){
+		window.location.href = arrUrl[this.index];
+	};
+}
+
+
+</script>
+
+
+	
+</body>
+
+</html>

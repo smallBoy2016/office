@@ -1,0 +1,83 @@
+.guide ul li{
+	height: 3.5rem;
+	width: 3.5rem;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 30px;
+	border-bottom: 1px solid #ccc;
+}
+.guide ul li div{
+	margin: 0 auto;
+	width: 2.8rem;
+	height: 2.8rem;
+	border-radius: 50%;
+	border:2px solid #145387;
+}
+.guide ul li p{
+	color: #333333;
+	font-size: .33rem;
+}
+.guide i{
+	font-size: 1.5rem;
+	line-height: 2.8rem;
+	color: #145387;
+}
+
+/*办事需知*/
+.know{
+	background: #ffffff;
+	height: auto;
+}
+.know h5{
+	padding: 10px 0 0 10px;
+	font-size: .35rem;
+}
+.know p{
+	width: 88%;
+	margin:0 auto;
+	text-indent: 2em;
+	font-size: .31rem;
+	padding:12px 0px;
+	border-bottom: 1px solid #ccc;
+}
+
+.btn{
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 6px;
+	font-size: .3rem;
+	color: #ffffff;
+	background: #145387;
+	margin: 0 auto;
+	margin-top: 3.5rem;
+	cursor: pointer;
+}
+
+
+/*form*/
+.form ul li{
+	height: 60px;
+	line-height: 60px;
+	text-indent: 1em;
+	font-size: .32rem;
+	border-bottom: 1px solid #ccc;
+}
+.form ul li i{
+	font-size: .45rem;
+	margin-right: .4rem;
+}
+.form input{
+	outline: none;
+}
+textarea{
+	display: block;
+	margin:0 auto;
+	background: #f8f8f8;
+	outline: none;
+	border:none;
+	text-indent: 1em;
+}
+
+

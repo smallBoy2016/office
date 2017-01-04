@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+  <title>劳动保障</title>
+  <script src="js/device.js"></script>
+  <link rel="stylesheet" href="css/iconfont.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet/less" href="style.less"/>
+  <script src="less.js"></script>
+  <style>
+  	.new_list_con li{
+  		height: 50px;
+  	}
+  	.new_list_con p{
+  		line-height: 40px;
+  		width: 88%;
+			  		overflow: hidden;
+  		text-overflow:ellipsis;
+  	}
+  	.new_list_con p a{
+  		color:#333;
+  		display: block;
+  		height: 38px;width: 100%;
+  		font-size: .33rem;
+  		overflow: hidden;
+  		text-overflow:ellipsis;
+  	}
+  </style>
+</head>
+
+<body>
+
+<div class="warp">
+	<header>
+		<h3>劳动保障</h3>
+		<a href="guide.html"><i class="iconfont icon-zuo" style="font-size:.6rem"></i></a>
+	</header>
+
+	<section class="commulity">
+
+		<div class="auto_img" style="margin-top: 30px;">
+			<img src="img/Bg-6.png">
+		</div>	
+
+		<div class="content">
+			<ul class="new_list_con">
+				<li>
+					<p><a href="guide2_1.html"><nobr>民政服务民政服务民政服务民政服务民政服务民政服务记及登记佛我就东方额的的</nobr></a></p>
+					<i class="iconfont icon-gengduo eyt"></i>
+				</li>				
+				<li>
+					<p><a href="guide2_1.html"><nobr>民政服务民政服务生育登记服务单</nobr></a></p>
+					<i class="iconfont icon-gengduo eyt"></i>
+				</li>
+				<li>
+					<p><a href="guide2_1.html">生育登记服务单</a></p>
+					<i class="iconfont icon-gengduo eyt"></i>
+				</li>
+				<li>
+					<p><a href="guide2_1.html">生民政服务育登记服务单</a></p>
+					<i class="iconfont icon-gengduo eyt"></i>
+				</li>
+
+			</ul>
+		</div>
+
+
+	</section>
+	
+</div>
+<script>
+	var eytDom = document.getElementsByClassName('eyt');
+	var len = eytDom.length;
+
+	for(var i=0; i<len ;i++){
+		eytDom[i].style.color = '#888888';
+		eytDom[i].style.fontSize = '.45rem';
+		eytDom[i].style.top = 10 + 'px';
+		eytDom[i].style.right = 10 + 'px';
+	}	
+</script>
+	
+</body>
+
+
+</html>

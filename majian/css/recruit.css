@@ -1,0 +1,72 @@
+.auto_img{
+	height: 320px;
+	background: #ffffff;
+	padding:0 6px;
+	margin:.3rem auto;
+	position: relative;
+}
+.auto_img h3{
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: .35rem;
+} 
+.border{
+	width: 60%;
+	margin: 0 auto;
+	height: 10px;
+	border-top: 1px solid #ccc;
+}
+
+.recruit_box{
+	width: 50%;
+	height: auto;
+	float: left;
+}
+.recruit_box p{
+	padding-left: 10px;
+	font-size: .28rem;
+	color: #999999;
+}
+.more{
+	position: absolute;
+	bottom: 10px;right: 10px;
+}
+.more>a{
+	color: rgb(234, 128, 18);
+	font-size: .31rem;
+}
+
+/*recruit_1*/
+.section h2{
+	width: 94%;
+	margin: 0 auto;
+	font-size: .45rem;
+	text-align: center;
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #ccc;
+}
+.section h4{
+	margin-top: 16px;
+	text-align: center;
+	font-size: .33rem;
+}
+.section h5{
+	text-indent: 2em;
+	font-size: .31rem;
+	margin-top: 20px;
+}
+.section p{
+	padding:4px 10px;
+	text-indent: 2em;
+	font-size: .28rem;
+}
+
+/*recruit1.html*/
+
+
+
+
+
+

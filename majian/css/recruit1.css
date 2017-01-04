@@ -1,0 +1,33 @@
+.recruit1_box{
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: .2rem;
+  margin-bottom: .2rem;
+  border-radius: 4px;
+  box-shadow: 0px 0px 8px #666;
+  padding-bottom: 60px;
+  position: relative;
+}
+.recruit1_box h3{
+	width: 90%;
+	height: 50px;
+	line-height: 60px;
+	text-align: center;
+	font-size: .35rem;
+	margin: 0 auto;
+	border-bottom: 1px solid #ccc;
+}
+.recruit1_box p{
+	padding:2px 10px;
+	text-indent: 1em;
+	font-size: .2rem;
+}
+.more{
+	position: absolute;
+	bottom: 10px;right: 16px;
+}
+.more>a{
+	color: rgb(234, 128, 18);
+	font-size: .26rem;
+}
